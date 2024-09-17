@@ -7,7 +7,7 @@ import (
 
 	"github.com/gofiber/fiber/v2"
 )
-
+//To get the key
 func GetKey(c *fiber.Ctx) error {
 	key := c.Query("key")
 
