@@ -63,19 +63,3 @@ func (lru *LRUCache) Get(key string) (string, bool) {
 	lru.CacheMap[key] = Cache
 	return Cache.value, true
 }
-
-// func main() {
-// 	// create lru with size specified
-// 	lru := NewLRUCache(5)
-
-// 	// check no value case -> return -1
-// 	log.Println(lru.Get(1))
-
-// 	// use of put
-// 	lru.Put(1, 1)
-// 	lru.Put(2, 2)
-
-// 	// use of get
-// 	log.Println(lru.Get(1))
-// 	log.Println(lru.Get(2))
-// }
